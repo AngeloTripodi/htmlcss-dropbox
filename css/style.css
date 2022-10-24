@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.margin-lr{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .flex{
     display: flex;
 }
@@ -30,6 +35,8 @@
     width: 70%;
     margin: 0 auto;
     background-color: rosybrown;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 /* header section */
@@ -79,12 +86,30 @@ div.img-intro-section-items img{
 }
 /* end intro section */
 
+/* business-section */
+
+
+div.columns-business-section{
+    width: 100%;
+}
+
+.multi {
+    width: calc(100% / 3);
+}
+
+div.col-business{
+    background-color: lime;
+    border: 1px black solid;    
+}
 
 
 
 
+/* end business-section */
 
 /* partner-section */
     div.img-container-partner-section img{
         height: 650px;
     }
+
+    /* end partner section */
