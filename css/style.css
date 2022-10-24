@@ -42,9 +42,26 @@ body{
 .container50{
     width: 50%;
     margin: 0 auto;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+
+.blue-button{
+    background-color: #0061ff;
+    color: white;
+    padding: .75rem 1rem;
+    border: none;
+    margin: 1.5rem 0;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.h1-mod{
+    font-size: 2.3rem;
+    padding-bottom: 2.3rem;
 }
 
 /* header section */
@@ -80,7 +97,7 @@ header{
 /* intro-section */
 .intro-section{
     background-color:#b4d0e7;
-    height: 70vh;
+   
 }
 
 .intro-section-title h1{
@@ -89,7 +106,9 @@ header{
 }
 
 .intro-section-title{
-    padding-top: 3rem;
+    
+    position: relative;
+    bottom: -80px;
 }
 
 .intro-section-items{
@@ -106,11 +125,23 @@ header{
 
 div.img-intro-section-items img{
     width: 100%;
+    
+}
+
+div.text-intro-section-items p#margin{
+    margin-bottom: 2.5rem;
+}
+
+.fa-arrow-down{
+    font-size: 3.5rem;
 }
 /* end intro section */
 
 /* business-section */
 
+.radio-button{
+    margin-bottom: 2rem;
+}
 
 div.columns-business-section{
     width: 100%;
@@ -121,11 +152,30 @@ div.columns-business-section{
 }
 
 div.col-business{
-    background-color: lime;
-    border: 1px black solid;    
+    border: 1px #dbdbdd solid;    
 }
 
+.card-icon{
+    text-align: center;
+    border: 1px #dbdbdd solid;
+    padding: .7rem 0;
+}
 
+.card-text{
+    border: 1px #dbdbdd solid;
+    padding: 1rem 1.5rem;
+}
+
+.card-text hr{
+    width: 30%;
+    text-align: left;
+    color: #dbdbdd;
+    margin: 3em 0;
+}
+
+.fa-check{
+    color: #0061ff;
+}
 
 
 /* end business-section */
