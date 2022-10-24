@@ -28,6 +28,7 @@
 
 .container70{
     width: 70%;
+    margin: 0 auto;
     background-color: rosybrown;
 }
 
@@ -76,3 +77,14 @@ header{
 div.img-intro-section-items img{
     width: 100%;
 }
+/* end intro section */
+
+
+
+
+
+
+/* partner-section */
+    div.img-container-partner-section img{
+        height: 650px;
+    }
