@@ -26,13 +26,13 @@
 }
 
 .container80{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     background-color: pink;
 }
 
 .container70{
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     background-color: rosybrown;
     margin-top: 3rem;
@@ -109,7 +109,32 @@ div.col-business{
 
 /* partner-section */
     div.img-container-partner-section img{
-        height: 650px;
+        width: 100%;
     }
 
+    .img-container-parter-section{
+        width:  50%;
+    }
+
+    .text-container-partner-section{
+        width: 50%;
+    }
+
+
     /* end partner section */
+
+    /* more-operations setting */
+
+    .container-more-operations-columns{
+       width: 100%;
+    }
+
+    .col-operations{
+        width: calc(100% / 3);
+    }
+
+    div.col-operations img{
+        width: 100%;
+    }
+
+    /* end more-operations setting */
