@@ -26,6 +26,10 @@ body{
     display: flex;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .flex-space-between{
     display: flex;
     justify-content: space-between;
@@ -309,10 +313,25 @@ div.col-business{
 
     /* clients section */
 
-    .clients{
-        height: 600px;
-        background-color: lawngreen;
+  
+
+    .square{
+        width: calc(100vw / 3);
+        height: calc(100vw / 3);
+        background-color: antiquewhite;
+    }
+    
+    .square-content{
+        width: calc(100% / 2);
+        height: calc(100% / 2);
+        background-color: blue;
     }
 
+    div.square-content path{
+        fill: white;
+    }
 
+    div.square-content svg{
+        width: 50%;
+    }
     /* end clients section */
