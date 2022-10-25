@@ -6,15 +6,20 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    min-width: 1400px;
 }
 
 .margin-lr{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
 .margin-top-big{
     margin-top: 12rem;
+}
+
+.margin-bottom-big{
+    margin-bottom: 10rem;
 }
 
 .flex{
@@ -25,6 +30,12 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex-space-between-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .flex-center{
@@ -55,13 +66,23 @@ body{
     margin: 1.5rem 0;
 }
 
+.white-button{
+    background-color: white;
+    color: black;
+    padding: .75rem 1rem;
+    border: none;
+    margin: 1.5rem 0;
+    border: 1px solid black;
+
+}
+
 .full-width{
     width: 100%;
 }
 
 .h1-mod{
     font-size: 2.3rem;
-    padding-bottom: 2.3rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -101,6 +122,8 @@ header{
    
 }
 
+
+
 .intro-section-title h1{
     font-size: 5rem;
    
@@ -125,7 +148,8 @@ header{
 }
 
 div.img-intro-section-items img{
-    width: 100%;
+    width: 850px;
+    height:500px;
     
 }
 
@@ -156,6 +180,7 @@ label[for=fatturazione-mensile]{
 div.columns-business-section{
     width: 100%;
     font-size: 0.9rem;
+    margin-bottom: 2.5rem;
 }
 
 .multi {
@@ -175,6 +200,16 @@ div.col-business{
 .card-text{
     border: 1px #dbdbdd solid;
     padding: 1rem 1.5rem;
+}
+
+.card-text-single{
+    padding: 1rem 1.5rem;
+    width: 70%;
+}
+
+.flex-card{
+    padding: 1rem 1.5rem;
+    border: 1px #dbdbdd solid;
 }
 
 .card-text hr{
@@ -198,6 +233,10 @@ div.col-business{
     margin-top: 1rem;
 }
 
+.title-card-single{
+    margin-bottom: 1rem;
+}
+
 .month-card{
     margin-bottom: 2.5rem;
 }
@@ -210,6 +249,10 @@ div.col-business{
     margin-bottom: 2rem;
 }
 
+.contact-card{
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
 
 
 
@@ -223,12 +266,23 @@ div.col-business{
     }
 
     .img-container-parter-section{
-        width: 30%;
+        width: 10%;
     }
 
     .text-container-partner-section{
-        width: 70%;
+        width: 90%;
+        padding: 3rem;
     }
+
+    .text-container-partner-section h2{
+        margin-bottom: 1rem;
+    }
+
+    .text-container-partner-section p{
+        margin-bottom: 1.5rem;
+    }
+
+
 
 
     /* end partner section */
@@ -247,4 +301,18 @@ div.col-business{
         width: 100%;
     }
 
+    .col-operations h2{
+    margin-bottom: 1.5rem;    
+    }
+
     /* end more-operations setting */
+
+    /* clients section */
+
+    .clients{
+        height: 600px;
+        background-color: lawngreen;
+    }
+
+
+    /* end clients section */
