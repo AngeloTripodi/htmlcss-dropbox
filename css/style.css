@@ -231,7 +231,8 @@ div.col-business{
 }
 
 .card-text hr,
-.square hr{
+.square hr,
+.language-selector hr{
     width: 30%;
     text-align: left;
     color: #dbdbdd;
@@ -424,5 +425,37 @@ div.col-business{
         border-top: black 1px solid;
     }
 
-
     /* end faq section */
+
+    /* footer */
+
+    footer{
+        background-color: black;
+        color: white;
+        padding-top: 5em;
+        padding-bottom: 3rem;
+    }
+
+    footer ul{
+        list-style-type: none;
+    
+    }
+
+    footer ul>li{
+        padding: .5rem 0;
+    }
+
+    footer ul>li:first-child{
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-bottom: 1.5rem;
+    }
+
+    .language-selector hr{
+        width: 10%;
+    }
+
+    .language-selector{
+        color: #999999 ;
+    }
+    /* end footer */
