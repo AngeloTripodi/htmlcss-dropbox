@@ -55,7 +55,7 @@ body{
 .flex-items-start{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .container70{
@@ -212,7 +212,7 @@ div.col-business{
 }
 
 .card-text{
-    border: 1px #dbdbdd solid;
+    /* border: 1px #dbdbdd solid; */
     padding: 1rem 1.5rem;
 }
 
@@ -223,7 +223,7 @@ div.col-business{
 
 .flex-card{
     padding: 1rem 1.5rem;
-    border: 1px #dbdbdd solid;
+    border: 2px #dbdbdd solid;
 }
 
 .card-text hr,
