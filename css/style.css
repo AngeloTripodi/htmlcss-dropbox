@@ -4,18 +4,20 @@
     box-sizing: border-box;
 }
 
+
+/* general */
 body{
     font-family: 'Open Sans', sans-serif;
     min-width: 1400px;
 }
 
+main{
+    padding-top: 85px;
+}
+
 .margin-lr{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-}
-
-.padding-3{
-    padding: 3rem;
 }
 
 .margin-top-big{
@@ -52,7 +54,7 @@ body{
     align-items: center;
 }
 
-.flex-items-start{
+.flex-stretch{
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -67,7 +69,6 @@ body{
 .container50{
     width: 50%;
     margin: 0 auto;
-    /* background-color: rosybrown; */
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -94,15 +95,44 @@ body{
 
 }
 
-.full-width{
-    width: 100%;
-}
-
 .h1-mod{
     font-size: 2.3rem;
     padding-bottom: 3rem;
 }
 
+/* multiple selector */
+.full-width-button,
+.container-more-operations-columns,
+div.img-container-partner-section img,
+div.col-operations img{
+    width: 100%;
+}
+
+.card-text hr,
+.square hr,
+.language-selector hr{
+    width: 30%;
+    text-align: left;
+    color: #dbdbdd;
+    margin: 3em 0;
+}
+
+.col-operations h2,
+.icon,
+.text-container-partner-section p{
+    margin-bottom: 1.5rem;    
+}
+
+.left-bar-header ul>li,
+.right-bar-header ul>li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 2rem ;
+}
+/* end multiple selector */
+
+/* general */
 
 /* header section */
 header{
@@ -110,6 +140,9 @@ header{
     width: 100%;
     height: 85px;
     padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 #start{
@@ -117,30 +150,13 @@ header{
     color: white;
     padding: .5rem .75rem;
 }
-
-.left-bar-header>ul,
-.right-bar-header>ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.left-bar-header ul>li,
-.right-bar-header ul>li{
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    padding-right: 2rem ;
-}
-
 /* end header section */
+
 
 /* intro-section */
 .intro-section{
     background-color:#b4d0e7;
-   
 }
-
-
 
 .intro-section-title h1{
     font-size: 5rem;
@@ -181,7 +197,6 @@ div.text-intro-section-items p#margin{
 /* end intro section */
 
 /* business-section */
-
 .radio-button{
     margin-bottom: 2rem;
     font-size: 0.9rem;
@@ -189,10 +204,6 @@ div.text-intro-section-items p#margin{
 
 label[for=fatturazione-mensile]{
     padding-right: 3rem;
-}
-
-{
-    padding-right: 2rem;
 }
 
 div.columns-business-section{
@@ -216,7 +227,6 @@ div.col-business{
 }
 
 .card-text{
-    /* border: 1px #dbdbdd solid; */
     padding: 1rem 1.5rem;
 }
 
@@ -228,15 +238,6 @@ div.col-business{
 .flex-card{
     padding: 1rem 1.5rem;
     
-}
-
-.card-text hr,
-.square hr,
-.language-selector hr{
-    width: 30%;
-    text-align: left;
-    color: #dbdbdd;
-    margin: 3em 0;
 }
 
 .fa-check{
@@ -261,10 +262,6 @@ div.col-business{
     margin-bottom: 2.5rem;
 }
 
-.icon{
-    margin-bottom: 1.5rem;
-}
-
 .sub-title{
     margin-bottom: 2rem;
 }
@@ -273,62 +270,30 @@ div.col-business{
     font-weight: bold;
     margin-bottom: 3rem;
 }
-
-
-
 /* end business-section */
 
 /* partner-section */
-
-
-    div.img-container-partner-section img{
-        width: 100%;
-    }
-
     .img-container-parter-section{
         width: 10%;
     }
 
     .text-container-partner-section{
         width: 90%;
-        padding: 3rem;
+        padding: 3rem 3rem 0 3rem;
     }
 
     .text-container-partner-section h2{
         margin-bottom: 1rem;
     }
-
-    .text-container-partner-section p{
-        margin-bottom: 1.5rem;
-    }
-
-
-
-
     /* end partner section */
 
     /* more-operations setting */
-
-    .container-more-operations-columns{
-       width: 100%;
-    }
-
     .col-operations{
         width: calc(100% / 3);
     }
-
-    div.col-operations img{
-        width: 100%;
-    }
-
-    .col-operations h2{
-    margin-bottom: 1.5rem;    
-    }
-
     /* end more-operations setting */
 
     /* clients section */
-
     .square{
         width: calc(100vw / 3);
         height: calc(100vw / 3);
@@ -363,7 +328,7 @@ div.col-business{
     }
 
     .turquoise-sq{
-        background-color: #0093ce ;
+        background-color: #0093ce;
     }
 
     .orange-sq{
@@ -388,11 +353,11 @@ div.col-business{
 
     .grey-sq{
       background-color: #f5f5f5;
+      padding: 3rem;
     }
     /* end clients section */
 
     /* company section */
-
     .company-section{
         background-color:#b4d0e7;
         height: 400px;
@@ -411,11 +376,9 @@ div.col-business{
     .company-container-text{
         flex-basis: 55%;
     }
-
     /* end company section */
 
     /* faq section */
-
     .divider-p-bottom {
         padding: 2rem 2rem 2rem 0rem;
         border-bottom: black 1px solid;
@@ -424,11 +387,9 @@ div.col-business{
     .divider-p-top{
         border-top: black 1px solid;
     }
-
     /* end faq section */
 
     /* footer */
-
     footer{
         background-color: black;
         color: white;
